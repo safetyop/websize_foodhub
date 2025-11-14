@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FoodHub — อาหารพรีเมียม 100★</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html"><span class="logo-left">Food</span><span class="logo-pill">Hub</span></a>
+<nav class="nav">
+<a href="index.html" class="nav-link">หน้าหลัก</a>
+<a href="about.html" class="nav-link">เกี่ยวกับเรา</a>
+<a href="#products" class="nav-link">เมนู</a>
+</nav>
+<div class="header-actions">
+<button id="cartBtn" class="cart-btn">ตะกร้า (<span id="cartCount">0</span>)</button>
+</div>
+</div>
+</header>
+
+
+<main>
+<section class="hero">
+<div class="container hero-inner">
+<h1>อาหารพรีเมียม — คุณภาพระดับ <span class="badge">100★</span></h1>
+<p class="lead">ร้านอาหารออนไลน์คุณภาพสูง ส่งตรงถึงบ้าน รสชาติเยี่ยม การันตีความสดใหม่</p>
+<a href="#products" class="cta">สั่งเลย</a>
+</div>
+</section>
+
+
+<section id="products" class="products container">
+<h2 class="section-title">เมนูแนะนำ</h2>
+<div class="grid" id="productGrid">
+<!-- รายการสินค้า จะถูกเติมโดย script.js หากต้องการแก้ไข ให้แก้ใน array ของ script.js -->
+</div>
+</section>
+
+
+<section class="features container">
+<div class="feature">
+<h3>คุณภาพ 100★</h3>
+<p>คัดสรรวัตถุดิบสดใหม่ ปรุงโดยเชฟมืออาชีพ</p>
+</div>
+<div class="feature">
+<h3>ส่งเร็ว</h3>
+<p>จัดส่งภายใน 1 ชั่วโมงในพื้นที่ที่ร่วมบริการ</p>
+</div>
+<div class="feature">
+<h3>แพ็กเกจพรีเมียม</h3>
+<p>บรรจุภัณฑ์รักษาอุณหภูมิและรูปลักษณ์ระดับพรีเมียม</p>
+</div>
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<div>© <span id="year"></span> FoodHub — อาหารพรีเมียม 100★</div>
+<div class="small">ติดต่อ: info@foodhub.example</div>
+</div>
+</footer>
+
+
+<div id="cartModal" class="modal hidden">
+<div class="modal-content">
+<h3>ตะกร้าของคุณ</h3>
+<div id="cartItems"></div>
+<div class="modal-actions">
+<strong>รวม: ฿<span id="cartTotal">0</span></strong>
+<button id="checkoutBtn" class="btn">ชำระเงิน</button>
+<button id="closeCart" class="btn btn-muted">ปิด</button>
+</div>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

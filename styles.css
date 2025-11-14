@@ -1,0 +1,70 @@
+:root{
+--bg:#0b0b0b; /* deep black */
+--accent:#ff7a00; /* porn-hub-like orange */
+--muted:#bdbdbd;
+--card:#111111;
+--glass: rgba(255,255,255,0.03);
+--max-width:1100px;
+--radius:12px;
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;
+font-family:Inter, Roboto, "Noto Sans Thai", sans-serif;
+background: linear-gradient(180deg,var(--bg) 0%, #070707 100%);
+color:#fff;
+-webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo-left{font-weight:800;font-size:20px;color:#fff;margin-right:6px}
+.logo-pill{background:var(--accent);color:#111;padding:6px 10px;border-radius:6px;font-weight:700}
+.nav{display:flex;gap:16px}
+.nav-link{color:var(--muted);text-decoration:none}
+.nav-link:hover{color:#fff}
+.cart-btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:#fff}
+
+
+.hero{padding:56px 0;text-align:center}
+.hero h1{font-size:36px;margin:0}
+.lead{color:var(--muted);margin-top:8px}
+.badge{background:var(--accent);padding:6px 10px;border-radius:20px;color:#111;font-weight:800}
+.cta{display:inline-block;margin-top:18px;padding:12px 22px;background:var(--accent);color:#111;border-radius:10px;text-decoration:none;font-weight:700}
+
+
+.products{padding:36px 0}
+.section-title{font-size:22px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.card img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+.card h4{margin:8px 0 4px}
+.card .price{font-weight:800}
+.card .meta{color:var(--muted);font-size:13px}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#111;border:none;cursor:pointer;font-weight:700}
+.btn-muted{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
+
+
+.features{display:flex;gap:20px;padding:28px 0}
+.feature{background:var(--glass);padding:18px;border-radius:12px;flex:1}
+.feature h3{margin:0 0 6px}
+
+
+.site-footer{border-top:1px solid rgba(255,255,255,0.04);padding:20px 0;margin-top:40px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.small{color:var(--muted);font-size:13px}
+
+
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)}
+.modal.hidden{display:none}
+.modal-content{background:#070707;padding:20px;border-radius:12px;width:90%;max-width:640px}
+.modal-actions{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+
+
+@media (max-width:700px){
+.features{flex-direction:column}
+.header-inner{gap:12px}
+}
